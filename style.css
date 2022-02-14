@@ -1,0 +1,41 @@
+.outDiv {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(156, 221, 226);
+    border-radius: 50px;
+}
+
+.inDiv {
+    width: 49px;
+    height: 49px;
+    background-color: rgb(229, 235, 182);
+    border-radius: 50px;
+}
+
+.ani {
+    animation: move 1s forwards;
+}
+
+.back {
+    animation: back 1s forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes back {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
